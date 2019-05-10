@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mahrosh Restaurant - Indian/American Food, Restaurant</title>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <!-- Bootstrap CSS File -->
+  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+  <app-root></app-root>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <base href="/">
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+	<!-- custom js -->
+	<script>
+      $(document).ready(function() {
+        $("#myCarousel").on("slide.bs.carousel", function(e) {
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 3;
+        var totalItems = $(".carousel-item").length;
+  
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide - (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+          // append slides to end
+          if (e.direction == "left") {
+            $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+          } else {
+            $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+          }
+          }
+        }
+        });
+      });
+  
+          $(function(){
+              $('#sliderCarousel').carousel();
+          });
+    </script>
+  
+    <!-- JavaScript Libraries -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/mobile-nav/mobile-nav.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="assets/contactform/contactform.js"></script>
+  
+    <!-- Template Main Javascript File -->
+    <script src="assets/js/main.js"></script>
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="es2015-polyfills.js" nomodule></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+</html>
