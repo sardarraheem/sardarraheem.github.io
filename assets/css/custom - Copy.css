@@ -7,7 +7,7 @@
 #header{background: #85251e !important;}
 #header .logo img {
   padding: 0;
-  margin: -2px 10px;
+  margin: 0 0;
   max-height: 45px;
 }
 #services .icon {
@@ -31,7 +31,7 @@
 .portfolio-item .project-des p{margin:5px 0 !important; text-align: center;
   font-weight: 600;}
 .portfolio-item .project-des{padding:5px ;    background: #c59b5f; color: white;}
-#menu .portfolio-item .portfolio-wrap{border-radius:0 !important;}
+#portfolio .portfolio-item .portfolio-wrap{border-radius:0 !important;}
 
 /*
 a:hover, a:active, a:focus {color: #86a91e !important;}
@@ -41,14 +41,14 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
 #intro .intro-info h2 span {color: #2d8c1c !important;}
 #intro .intro-info .btn-services:hover{background: #fdcf81 !important; border: 2px solid #fdcf81 !important;}
 #services .box:hover .title a {color: #fdcf81 !important;}
-#menu .portfolio-item .portfolio-wrap .portfolio-info .link-preview, #menu .portfolio-item .portfolio-wrap .portfolio-info .link-details{background: #fdcf81 !important;}
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview, #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details{background: #fdcf81 !important;}
 #about .about-container .icon-box:hover .icon {background: #fdcf81 !important; color:#fff !important; }
 #about .about-container .icon-box .icon{border: 2px solid #fdcf81 !important;}
 #about .about-container .icon-box:hover .icon i{color:#fff !important;}
 #about .about-container .icon-box .icon i{color:#fdcf81 !important;}
 .form-control:focus{border-color:#fdcf81 !important; }
-#menu #portfolio-flters li{color:#fdcf81 !important;}
-#menu #portfolio-flters li:hover, #menu #portfolio-flters li.filter-active {background: #c59b5f !important; color:white !important;}
+#portfolio #portfolio-flters li{color:#fdcf81 !important;}
+#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {background: #c59b5f !important; color:white !important;}
 .back-to-top{background:#c59b5f !important;}
 #contact .form button[type="submit"] {background: #c59b5f !important;}
 #contact .info i {color: #fdcf81 !important;}
@@ -177,32 +177,32 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   text-align: right;
 }
 
-#menu {
+#portfolio {
   background:  url(../img/hero_slide_3.jpg);
   /*background-image: url(../img/Fruit-PNG.png), url(../images/menu-right-bg.png)*/;
   /*background-repeat: no-repeat;
   background-position: 20px 118px, right 62px;
-  */
-  padding: 60px 0;
-  background-size: cover !important;
+  */background-size: cover !important;
   background-attachment: fixed !important;
   position: relative !important;}
-#menu .menu-section .section-title-box {
+}
+.menu-section .section-title-box {
   margin-bottom: 30px;
 }
-#menu #portfolio-flters {
+#portfolio-flters {
   width: 100% !important;
   display: block !important;
   text-align: center !important;
   margin-bottom: 40px !important;
 }
-#menu #portfolio-flters .active, #menu .portfolio-flters li:hover {
+#portfolio-flters .active, .portfolio-flters li:hover {
   background: #c59b5f !important;
   color: #fff !important;
 }
-#menu #portfolio-flters li {
+#portfolio-flters li {
   background: #272627 !important;
   text-align: center !important;
+  margin: 0 !important;
   color: #fff !important;
   font-size: 14px !important;
   font-weight: 900 !important;
@@ -225,12 +225,3 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   color: white;
 }
 
-
-
-@media screen and (max-width:680px){
-  .about-content a{padding: 5px 10px;}
-  .about-thumb img{width: 200px; margin-top: 40px;}
-  .section-title-box h1 {font-size: 40px;}
-  #portfolio #portfolio-flters li{margin-bottom: 10px !important;}
-}: 10px !important;}
-}
