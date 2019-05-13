@@ -4,7 +4,9 @@
   transition: 0.3s;
   font-size: 16px !important;
   font-family: "Montserrat", sans-serif;}
-#header{background: #85251e !important;}
+#header{background: #85251e !important; z-index: 999 !important;}
+.mobile-nav-toggle i {
+  color: #c59b5f !important; }
 #header .logo img {
   padding: 0;
   margin: -2px 10px;
@@ -16,7 +18,7 @@
 #carouselExampleIndicators .carousel-item {
   height: 100vh;
   min-height: 350px;
-  background: no-repeat center center scroll;
+  background: no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,7 +103,7 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   height: 1px;
   background: #fff;
   position: absolute;
-  z-index: 9999;
+  z-index: 99;
   right: 40px;
   top: 15px;
 }
@@ -112,7 +114,7 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   height: 1px;
   background: #fff;
   position: absolute;
-  z-index: 9999;
+  z-index: 99;
   left: 40px;
   top: 15px;
 }
@@ -219,7 +221,7 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   background: url("../img/contact-us-background-2.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed !important;
+  /*background-attachment: fixed !important;*/
   position: relative !important;}
 #contact .info p {
   color: white;
@@ -231,6 +233,20 @@ a:hover, a:active, a:focus {color: #86a91e !important;}
   .about-content a{padding: 5px 10px;}
   .about-thumb img{width: 200px; margin-top: 40px;}
   .section-title-box h1 {font-size: 40px;}
-  #portfolio #portfolio-flters li{margin-bottom: 10px !important;}
-}: 10px !important;}
+  #menu #portfolio-flters li{margin:5px !important;}
+  #menu {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    position: relative !important;}
+  #carouselExampleIndicators .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }
+
+
 }
